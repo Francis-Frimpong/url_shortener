@@ -1,7 +1,7 @@
 <?php
 
 
-// $routes = require __DIR__ . '/../app/Routes/routes.php';
+$routes = require __DIR__ . '/../app/Routes/routes.php';
 
 
 $method = $_SERVER['REQUEST_METHOD'];
