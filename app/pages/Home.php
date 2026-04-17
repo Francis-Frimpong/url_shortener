@@ -14,7 +14,7 @@
       </div>
 
       <div class="col-md-6 text-center mt-4 mt-md-0">
-        <img src="https://via.placeholder.com/400" class="img-fluid" alt="illustration">
+        <img src="image/illustration-working.svg" class="img-fluid" alt="illustration">
       </div>
 
     </div>
