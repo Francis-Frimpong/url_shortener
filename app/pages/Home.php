@@ -1,5 +1,7 @@
 <?php require_once __DIR__ .'/../pages/partials/header.php';?>
 
+
+
 <!-- HERO -->
 <section class="hero">
   <div class="container">
@@ -20,16 +22,27 @@
     </div>
 
     <!-- SEARCH BOX -->
-    <div class="search-box mt-5">
-      <div class="row g-2">
-        <div class="col-md-10">
-          <input type="text" class="form-control" placeholder="Shorten a link here...">
-        </div>
-        <div class="col-md-2">
-          <button class="btn w-100">Shorten It!</button>
-        </div>
+  <form action="/url_shortener/home" method="POST" class="search-box mt-5">
+    <div class="row g-2">
+
+      <div class="col-md-10">
+        <input 
+          type="text" 
+          name="url"
+          class="form-control" 
+          placeholder="Shorten a link here..." 
+          required
+        >
       </div>
+
+      <div class="col-md-2">
+        <button type="submit" class="btn w-100">
+          Shorten It!
+        </button>
+      </div>
+
     </div>
+  </form>
 
   </div>
 </section>
