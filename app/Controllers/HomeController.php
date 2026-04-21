@@ -23,7 +23,8 @@ class HomeController
 
 
     public function homePage(){
-          require __DIR__ . '/../pages/Home.php';
+        $urlLink = $this->links->displayLinks();
+        require __DIR__ . '/../pages/Home.php';
     }
 
     public function addLinks()

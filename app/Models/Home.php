@@ -20,4 +20,12 @@ class Home
 
         return $stmt->fetch();
     }
+
+    public function displayLinks()
+    {
+        $sql = "SELECT original_url, short_code FROM Links";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
 }

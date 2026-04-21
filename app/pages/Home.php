@@ -47,6 +47,38 @@
   </div>
 </section>
 
+<div class="container mt-4">
+
+  <?php foreach ($urlLink as $link): ?>
+
+    <div class="link-card d-flex flex-column flex-md-row align-items-md-center justify-content-between">
+
+      <!-- ORIGINAL LINK -->
+      <div class="original">
+        <?= htmlspecialchars($link['original_url']) ?>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="right-group d-flex align-items-center">
+
+        <div class="short">
+          <?= htmlspecialchars($link['short_code']) ?>
+        </div>
+
+        <button class="copy-btn" onclick="copyToClipboard(this, '<?= htmlspecialchars($link['short_code']) ?>')">
+          Copy
+        </button>
+
+      </div>
+
+    </div>
+
+  <?php endforeach; ?>
+
+</div>
+
+
+
 <!-- STATS -->
 <section class="stats container">
   <h2 class="fw-bold">Advanced Statistics</h2>

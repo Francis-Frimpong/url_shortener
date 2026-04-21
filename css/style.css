@@ -39,6 +39,63 @@ body {
   border: none;
 }
 
+.link-card {
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 14px 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* LEFT */
+.original {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+  word-break: break-all;
+}
+
+/* RIGHT GROUP */
+.right-group {
+  gap: 12px;
+}
+
+/* SHORT LINK */
+.short {
+  font-size: 14px;
+  color: #2acfcf;
+  white-space: nowrap;
+}
+
+/* BUTTON */
+.copy-btn {
+  background: #2acfcf;
+  color: #fff;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  min-width: 90px;
+}
+
+/* COPIED STATE */
+.copy-btn.copied {
+  background: #3b3054;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .right-group {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .short {
+    white-space: normal;
+  }
+}
+
 .stats {
   margin-top: 80px;
   text-align: center;
