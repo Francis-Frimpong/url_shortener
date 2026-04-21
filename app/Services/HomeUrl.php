@@ -23,7 +23,7 @@ class HomeUrl
         }
 
         
-        $short_code = basename($short_url);
+        $short_code = $short_url;
 
         return $short_code;
     }
